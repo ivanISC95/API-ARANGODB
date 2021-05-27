@@ -12,12 +12,9 @@ import simplejson
 app = Sanic("My Hello, world app")
 
 
-# URL LOCAL : http://localhost:8529/_db/_system/Estado/estado
-# URL SERVIDOR : https://arango.conoce360.tech 
-
 # VARIABLES DE CONEXIÓN CON ARANGODB!
-con = Connection(arangoURL="http://arango.conoce360.tech", username="root",password="conoce360")
-#con = Connection(arangoURL="http://localhost:8529/", username="root",password="svenvath1")
+con = Connection(arangoURL="http://arango.conoce360.tech", username="root",password="")
+#con = Connection(arangoURL="http://localhost:8529/", username="root",password="")
 bd = con["_system"]
 # VARIABLES PARA EL DIA PYTHON
 now = datetime.now()
